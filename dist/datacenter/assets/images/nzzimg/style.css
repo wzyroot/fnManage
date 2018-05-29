@@ -1,0 +1,37 @@
+@charset "utf-8";
+* { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; margin:0; padding:0;}
+body{ min-width:320px; max-width:640px; margin:0 auto; }
+img{ border:none;}
+a { color:#000; text-decoration:none; }
+a:link, a:visited { text-decoration:none; }
+a:hover { text-decoration:underline; }
+.fl{float:left;}
+.fr{float:right;}
+.mT10{margin-top:5%;}
+.clr{clear:both;}
+/* CSS Document */
+/** { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; margin:0; padding:0;}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, font { padding:0; margin: 0; font-family: "微软雅黑", Arial, Helvetica, sans-serif; }
+table { border-collapse:collapse; border-spacing:0; width:100%; }
+fieldset, img { border:0; vertical-align:top; }
+
+ol, ul, li, dl, dt, dd { list-style:none; }
+input, button, textarea, checkbox, select, radio, form { vertical-align: top; }
+a { color:#000; text-decoration:none; }
+a:link, a:visited { text-decoration:none; }
+a:hover { text-decoration:underline; }
+*/
+.box{width:100%; margin:0 auto;}
+
+.box img{width:100%;}
+.time{width:96%; margin:5% 2% 0; /*height:6.4rem;*/}
+
+.timeleft{width:81%;}
+.sy,.mr{ width:81%; margin-bottom:5%;}
+.sy img{width:35%;}
+.mr img{width:35%;}
+.timeright{width:19%;}
+.timeright img{width:100%;}
+#remainTime{font-size:1.2rem;font-weight:800;color:#000;}
+#minger{font-size:1.2rem;font-weight:800;color:#000;}

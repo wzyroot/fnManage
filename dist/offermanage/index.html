@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一键停售</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 40rem;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+
+
+    <script src="zepto.min.js"></script>
+    <script>
+        var state = Date.parse(new Date);
+        var newappid = 'wxc179ff8c019bd102';
+        var redirect_url = encodeURIComponent('http://wxadmin.efunong.com/offermanage/index.html');//tms.inner.efunong.com wxadmin.efunong.com:81
+        var url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid="+newappid+"&redirect_uri="+redirect_url+"&response_type=code&scope=snsapi_base&state="+state+"#wechat_redirect";
+        var dtcookie = getCookie('dtcookie')
+        // if (dtcookie == '' || dtcookie == null) {
+            var code = window.location.search.substr(1).split('&')[0].split('=')[1];
+            if (code== '' || code == null || code == undefined) {
+                window.location.href = url;
+            }else{
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://wxadmin.efunong.com:81/index.php?g=landpush&m=offermanage&a=offerManage&code='+code,
+                    success: function(data) {
+                        var openid = data.openid
+                        if (openid != '' || openid != null || openid != undefined) {
+                            setCookie('dtcookie',openid);
+                        }
+                        $('.container').html(data.message);
+                    }
+                });
+            }
+        // }
+        // else{
+        //     var openid = getCookie('dtcookie');
+        //     $('.container').html(openid);
+        // }
+        function setCookie(name, val) 
+        {
+            document.cookie=name+'='+encodeURIComponent(val);
+        }
+        function getCookie(name)
+        {
+            var arr=document.cookie.split('; ');
+            var i=0;
+            for(i=0;i<arr.length;i++)
+            {
+                //arr2->['username', 'abc']
+                var arr2=arr[i].split('=');
+                 
+                if(arr2[0]==name)
+                {  
+                    var getC = decodeURIComponent(arr2[1]);
+                    return getC;
+                }
+            }
+             
+            return '';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<style type="text/css">
+	#topblack{position: fixed;width: 100%;z-index: 2;top: 0;}
+	.margintab{height: 3rem;}
+</style>
+<script type="text/javascript">
+	var type = $('#pagetype').val();
+	$(function(){
+		$('#tab1').tab({defaultIndex:type,activeClass:"tab-green"});
+		$(".weui_navbar_item").click(function(){
+			var index=$(this).index();
+			if (index==0) {
+				var url = "{:U('portal/thcontract/dkdlist')}";
+			}else if (index==1){
+				var url = "{:U('portal/thcontract/ykdlist')}";
+			}else if (index==2){
+				var url = "{:U('portal/thcontract/dwclist')}";
+			}else{
+				var url = "{:U('portal/thcontract/alllist')}";
+			}
+			window.location.href=url;
+		});
+	});
+</script>
+<div id="topblack">
+<div class="weui_btn_primary weui-header">
+	<div class="weui-header-left"><a href="{:U('portal/mine/index')}" class="icon icon-109 f-white">返回</a></div><h1 class="weui-header-title"></h1><div class="weui-header-right"></div> 
+</div>
+<div class="weui_tab" id="tab1">
+	<div class="weui_navbar">
+		<div class="weui_navbar_item">待开单</div>
+		<div class="weui_navbar_item">已开单</div>
+		<div class="weui_navbar_item">待完成</div>
+		<div class="weui_navbar_item">全部</div>
+	</div>	            
+</div>
+</div>
+<div class="margintab"></div>

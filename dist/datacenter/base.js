@@ -1,0 +1,1 @@
+var baseurl = "http://wxadmin.efunong.com:81"

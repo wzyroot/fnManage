@@ -1,0 +1,33 @@
+<div style="padding-bottom: 3.5rem"></div>
+<div class="weui_tab tab-bottom" >
+            <div class="weui_tabbar ">
+            		<a href="{:U('portal/index/index')}" class="weui_tabbar_item weui_bar_item_on"><div class="weui_tabbar_icon"><img id="img1" src="__TMPL__Public/assets/images/funong/price_g.png" alt=""></div><p class="weui_tabbar_label">报价</p></a>
+                	<a href="{:U('portal/news/index')}" class="weui_tabbar_item"><div class="weui_tabbar_icon"><img id="img2" src="__TMPL__Public/assets/images/funong/news.png" alt=""></div><p class="weui_tabbar_label">咨询</p></a>
+                	<a href="{:U('portal/mine/index')}" class="weui_tabbar_item"><div class="weui_tabbar_icon"><img id="img3" src="__TMPL__Public/assets/images/funong/mine.png" alt=""></div><p class="weui_tabbar_label">我的</p></a>
+            </div>
+</div>
+<script type="text/javascript">
+	$('.weui_tab').tab({
+		defaultIndex: 0,
+    		activeClass:'weui_bar_item_on',
+    		onToggle:function(index){
+    			switch(index) {
+    				case 0:
+    					$("#img1").attr("src", "__TMPL__Public/assets/images/funong/price_g.png"); 
+					$("#img2").attr("src", "__TMPL__Public/assets/images/funong/news.png"); 
+					$("#img3").attr("src", "__TMPL__Public/assets/images/funong/mine.png");
+    					break;
+    				case 1:
+    					$("#img1").attr("src", "__TMPL__Public/assets/images/funong/price.png"); 
+    					$("#img2").attr("src", "__TMPL__Public/assets/images/funong/news_g.png"); 
+					$("#img3").attr("src", "__TMPL__Public/assets/images/funong/mine.png"); 
+    					break;
+    				case 2:
+    					$("#img1").attr("src", "__TMPL__Public/assets/images/funong/price.png"); 
+    					$("#img2").attr("src", "__TMPL__Public/assets/images/funong/news.png"); 
+					$("#img3").attr("src", "__TMPL__Public/assets/images/funong/mine_g.png"); 
+    					break;
+    			}
+   		}
+	});
+</script>

@@ -1,0 +1,47 @@
+[ 2018-05-09T15:42:35+08:00 ] 192.168.0.138 /index.php?g=portal&m=database&a=saleopenorder
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtorder` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xz_tradewxuser` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtuser` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: url D:\wamp\www\fnAdmin\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-05-09T15:43:39+08:00 ] 192.168.0.138 /index.php?g=portal&m=database&a=datainfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtorder` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xz_tradewxuser` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtuser` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: url D:\wamp\www\fnAdmin\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-05-09T16:12:49+08:00 ] 203.110.163.205 /
+ERR: 无法加载控制器:Index
+
+[ 2018-05-09T16:14:43+08:00 ] 203.110.163.205 /index.php?g=portal&m=database&a=salepurchase
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000187s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtorder` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `xz_tradewxuser` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtuser` [ RunTime:0.0098s ]
+NOTIC: [8] Undefined index: url /usr/local/nginx/html/wxadmin_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+
+[ 2018-05-09T16:14:51+08:00 ] 203.110.163.205 /index.php?g=portal&m=database&a=datainfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000188s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtorder` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `xz_tradewxuser` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `xz_fnsmtuser` [ RunTime:0.0105s ]
+NOTIC: [8] Undefined index: url /usr/local/nginx/html/wxadmin_html/application/Common/Controller/AppframeController.class.php 第 22 行.
+
